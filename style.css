@@ -1,12 +1,17 @@
 /*universal font declaration */ 
 * {
-  font-family: Georgia;
+  font-family: 'Playfair Display', sans-serif;
 }
 /* header 1 color and font size */
 h1 {
-  color: Blue;
-  background-color: tan;
+  font-family: "Georgia";
+  color: RGB(2, 93, 140);
+  color: RGBa(2, 93, 140, 0.9);
+  background-color: AliceBlue;
   font-size: 36 px; 
+}
+p {
+  font-family: "Helvetica"; 
 }
 /* website link color */
 a {
@@ -16,4 +21,8 @@ a {
 
 img {
   border-radius: 100%;
+}
+
+ul {
+  color: Crimson; 
 }
