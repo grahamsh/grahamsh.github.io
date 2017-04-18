@@ -1,12 +1,14 @@
- * {
-  font-family: 'Georgia', 'Times', serif;
+/*universal font declaration */ 
+* {
+  font-family: Georgia;
 }
-
-h1{
- color: Blue;
- font-size: 36 px; 
+/* header 1 color and font size */
+h1 {
+  color: Blue;
+  background-color: tan;
+  font-size: 36 px; 
 }
-
+/* website link color */
 a {
   color: SeaGreen;
   text-decoration: none;
