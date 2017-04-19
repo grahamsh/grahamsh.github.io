@@ -2,7 +2,7 @@
 * {
   font-family: 'Playfair Display', sans-serif;
 }
-/* header 1 color and font size */
+/* you can change word spacing using word-spacing */
 h1 {
   font-family: "Georgia";
   color: RGB(2, 93, 140);
@@ -10,13 +10,18 @@ h1 {
   background-color: AliceBlue;
   font-size: 36 px; 
 }
+/* if a font is not available for a user, setting fallback fonts is necessary */
 p {
-  font-family: "Helvetica"; 
+  font-family: "Helvetica", Garamond, serif;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: bold;
 }
 /* website link color */
 a {
   color: SeaGreen;
   text-decoration: none;
+  font-style: italic;
 }
 
 img {
