@@ -11,6 +11,14 @@ h1 {
   font-size: 36 px; 
   text-align: center;
 }
+h3 {
+  font-family: "Georgia";
+  color: RGB(2, 93, 140);
+  color: RGBa(2, 93, 140, 0.9);
+  background-color: AliceBlue;
+  font-size: 36 px; 
+  text-align: center;
+}
 /* if a font is not available for a user, setting fallback fonts is necessary */
 p {
   font-family: "Helvetica", Garamond, serif;
