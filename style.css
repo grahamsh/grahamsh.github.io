@@ -7,7 +7,7 @@ h1 {
   font-family: "Georgia";
   color: RGB(2, 93, 140);
   color: RGBa(2, 93, 140, 0.9);
-  background-color: AliceBlue;
+  /* background-color: AliceBlue; */
   font-size: 36 px; 
   text-align: center;
 }
@@ -15,7 +15,7 @@ h3 {
   font-family: "Georgia";
   color: RGB(2, 93, 140);
   color: RGBa(2, 93, 140, 0.9);
-  background-color: AliceBlue;
+  /* background-color: AliceBlue; */
   font-size: 36 px; 
   text-align: center;
 }
