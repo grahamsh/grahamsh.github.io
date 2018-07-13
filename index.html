@@ -5,8 +5,34 @@
 
     <link href="./style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
+    
+    <!--
+      <div class="tabbable tabs-right"> 
+        <ul class="nav nav-tabs navbar-right">
+          <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+          <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+        </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          <p>I'm in Section 1.</p>
+        </div>
+        <div class="tab-pane" id="tab2">
+          <p>Howdy, I'm in Section 2.</p>
+        </div>
+      </div>
+    </div>
+    -->
+    
     <div class="center">
        <!-- <p>An image:</p> -->
     <a href="https://en.wikipedia.org/wiki/Boulder,_Colorado"
@@ -20,7 +46,7 @@
   		<h1>Graham Harper</h1>
       <h2>Programmer.</h2>
   	</div>
-    
+    <!--
     <div id="pullout">
       <div id="pullout-tab">
         <h2>Resume</h2>
@@ -28,6 +54,19 @@
       <div id="pullout-inner">
         <h3>This is where my resume will go</h3>
       </div>
+    </div>
+    -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Resume goes here</a>
+      <h4>This is a fake resume</h4>
+      <embed src="Image/Fakeresume.pdf#zoom=100" type="application/pdf" width="100%" height="100%" />
+    </div>
+
+   
+
+    <div id="feedback">
+      <div id="feedback-tab">Feedback</div>
     </div>
     <!--
     <div class="tab">
@@ -40,21 +79,38 @@
     </div>
     -->
     <div class = "center">
+    
     <h3> Links:</h3>
+    <h4> Resume, Github, Email </h4>
+     <!-- Use any element to open the sidenav -->
+
+    <span onclick="openNav()">
+      <img 
+        src = "https://png.icons8.com/dotty/50/000000/resume.png"
+        height = "20%"
+        width = "20%"
+        alt = "My Resume"
+        /></span>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <!--
+    <div id="main">
+    </div>
+  -->
     <a href="https://github.com/grahamsh"
     target="_blank">
     <img 
       src = "https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
-      height = "10%"
-      width = "10%"
+      height = "20%"
+      width = "20%"
       alt="My Github" 
     /></a>
     <a href="mailto:Harper.grahams@gmail.com"
     target="_blank">
     <img 
       src = "    http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/email-icon.png"
-      height = "10%"
-      width = "10%"
+      height = "20%"
+      width = "20%"
       alt="Email Me" 
     /></a>
   </div>

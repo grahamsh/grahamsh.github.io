@@ -2,7 +2,17 @@ $('#pullout-tab').click(function() {
   $('#pullout').toggleClass('active');
 });
 
-/*
+
+/* Open the sidenav */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
 function openTab(evt, tab){
 	var i, tabcontent, tablinks;
 
@@ -21,4 +31,5 @@ function openTab(evt, tab){
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-*/
+
+
