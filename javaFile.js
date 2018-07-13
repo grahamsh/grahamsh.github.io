@@ -1,7 +1,3 @@
-$('#pullout-tab').click(function() {
-  $('#pullout').toggleClass('active');
-});
-
 
 /* Open the sidenav */
 function openNav() {
@@ -11,6 +7,15 @@ function openNav() {
 /* Close/hide the sidenav */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+}
+/* Open the sidenav */
+function openNav2() {
+    document.getElementById("mySidenav2").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav2() {
+    document.getElementById("mySidenav2").style.width = "0";
 }
 
 function openTab(evt, tab){

@@ -39,59 +39,47 @@
     target="_blank">
     <img
          src="https://i.reddituploads.com/a9689f3ce24c408585101ff0da32ea3d?fit=max&h=1536&w=1536&s=d0b71e039bf1965c6ca1eb3530f2ee54" 
-         height="400px" width="20px"
+         height="400px" width="2.5px"
          alt="A photo of the Flatirons in Boulder, Colorado"
          class = "center"
          /></a>
   		<h1>Graham Harper</h1>
       <h2>Programmer.</h2>
   	</div>
-    <!--
-    <div id="pullout">
-      <div id="pullout-tab">
-        <h2>Resume</h2>
-      </div>
-      <div id="pullout-inner">
-        <h3>This is where my resume will go</h3>
-      </div>
-    </div>
-    -->
+
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Resume goes here</a>
+      <h3>Resume goes here</h3>
       <h4>This is a fake resume</h4>
       <embed src="Image/Fakeresume.pdf#zoom=100" type="application/pdf" width="100%" height="100%" />
     </div>
 
-   
+    <div id="mySidenav2" class="sidenav2">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+      <h3>Projects go here</h3>
+      <h4>Need to insert projects</h4>
+    </div>   
 
     <div id="feedback">
       <div id="feedback-tab">Feedback</div>
-    </div>
-    <!--
-    <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
+
     </div>
 
-    <div id="Resume" class="tabcontent">
-      <h3>Resume</h3>
-      <p>This is where my resume will go</p>
-    </div>
-    -->
     <div class = "center">
     
     <h3> Links:</h3>
-    <h4> Resume, Github, Email </h4>
+    <h4>
+      <a onclick="openNav()">Resume,</a> <a href="https://github.com/grahamsh" target="_blank">Github,</a> <a href="mailto:Harper.grahams@gmail.com" target="_blank"> Email,</a> <a onclick="openNav2()">Projects</a>
+    </h4> 
      <!-- Use any element to open the sidenav -->
 
     <span onclick="openNav()">
       <img 
-        src = "https://png.icons8.com/dotty/50/000000/resume.png"
-        height = "10%"
-        width = "10%"
+        src = "Image/icons8-resume-100-black.png"
+        height = "60px"
+        width = "60px"
         alt = "My Resume"
         /></span>
-
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <!--
     <div id="main">
@@ -101,18 +89,26 @@
     target="_blank">
     <img 
       src = "https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
-      height = "10%"
-      width = "10%"
+      height = "60px"
+      width = "60px"
       alt="My Github" 
     /></a>
     <a href="mailto:Harper.grahams@gmail.com"
     target="_blank">
     <img 
-      src = "    http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/email-icon.png"
-      height = "10%"
-      width = "10%"
+      src = "http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/email-icon.png"
+      height = "60px"
+      width = "60px"
       alt="Email Me" 
     /></a>
+    <span onclick="openNav2()">
+      <img 
+        src = "Image/icons8-realtime-96.png"
+        target="_blank"
+        height = "70px"
+        width = "70px"
+        alt = "Projects"
+        /></span>
   </div>
     
   <script type="text/javascript" src="./javaFile.js"></script> 
