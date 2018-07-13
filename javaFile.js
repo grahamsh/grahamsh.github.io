@@ -18,6 +18,45 @@ function closeNav2() {
     document.getElementById("mySidenav2").style.width = "0";
 }
 
+/* Open the sidenav */
+function openFeedback() {
+    document.getElementById("feedback").style.width = "50%";
+}
+
+/* Close/hide the sidenav */
+function closeFeedback() {
+    document.getElementById("feedback").style.width = "0";
+}
+/* Open the sidenav */
+function openWork() {
+    var x = document.getElementById("work");
+    if (x.style.display === "none"){
+    	x.style.display = "block";
+    }else{
+    	x.style.display = "none";
+    }
+}
+/* Open the sidenav */
+function openProjects() {
+    var x = document.getElementById("projects");
+    if (x.style.display === "none"){
+    	x.style.display = "block";
+    }else{
+    	x.style.display = "none";
+    }
+}
+/* Open the sidenav */
+function openProject() {
+    var x = document.getElementById("projectDescription");
+    if (x.style.display === "none"){
+    	x.style.display = "block";
+    }else{
+    	x.style.display = "none";
+    }
+}
+
+
+
 function openTab(evt, tab){
 	var i, tabcontent, tablinks;
 

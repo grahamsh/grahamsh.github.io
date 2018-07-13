@@ -73,6 +73,14 @@ ul {
   color: Crimson; 
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 36px;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -206,7 +214,10 @@ body{
         height: 250px;
         margin-left: -3px;
         margin-bottom: -3px;
-    }
+        width:0;
+        background-color: #111;
+        transition: 0.5s;
+            }
 
     #feedback-tab {
         float: right;
@@ -233,6 +244,14 @@ body{
     #feedback-tab:hover {
         background-color: rgba(0,0,0,0.4);
     }
+    #feedback .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    }
+
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
