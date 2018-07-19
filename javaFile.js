@@ -19,6 +19,15 @@ function closeNav2() {
 }
 
 /* Open the sidenav */
+function openBottom() {
+    document.getElementById("myBottomNav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeBottom() {
+    document.getElementById("myBottomNav").style.width = "0";
+}
+/* Open the sidenav */
 function openFeedback() {
     document.getElementById("feedback").style.width = "50%";
 }
@@ -54,7 +63,26 @@ function openProject() {
     	x.style.display = "none";
     }
 }
+function openLinks() {
+    var x = document.getElementById("links");
+    if (x.style.display === "none"){
+    	x.style.display = "block";
+    }else{
+    	x.style.display = "none";
+    }
+}
+function openLink() {
+	window.location.href='https://github.com/grahamsh/BlackJackGame','_blank';
+}
 
+function openPictures() {
+    var x = document.getElementById("pictures");
+    if (x.style.display === "none"){
+    	x.style.display = "block";
+    }else{
+    	x.style.display = "none";
+    }
+}
 
 
 function openTab(evt, tab){
@@ -76,4 +104,14 @@ function openTab(evt, tab){
     evt.currentTarget.className += " active";
 }
 
-
+function changeImage(){
+	var counter = 1
+	if(counter == 0){
+        document.getElementById("pictures").src = "Image/BlackJack1.png";
+        counter=1;
+    }
+    else if(counter == 1){
+        document.getElementById("pictures").src = "Image/BlackJack2";
+        counter=0;
+    }
+}

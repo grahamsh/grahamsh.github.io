@@ -7,6 +7,10 @@
   font-size: 36 px; 
   text-align: center;
 }
+
+.color {
+    background-color: #ccc;
+}
 /* you can change word spacing using word-spacing */
 h1 {
   font-family: 'Ubuntu Mono', monospace;
@@ -15,6 +19,7 @@ h1 {
   /* background-color: AliceBlue; */
   font-size: 36 px; 
   text-align: center;
+
 }
 h2 {
   font-family: 'Ubuntu Mono', monospace;
@@ -31,7 +36,10 @@ h3 {
   /* background-color: AliceBlue; */
   font-size: 36 px; 
   text-align: center;
+  transition: .8s;
+  cursor: pointer;
 }
+
 h4 {
   font-family: 'Ubuntu Mono', monospace;
   color: RGB(0, 200, 0);
@@ -40,6 +48,21 @@ h4 {
   font-size: 24 px; 
   text-align: center;
 }
+<style>
+.center h3 {
+    padding: 50px;
+    transition: 1s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+
+.center h3:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
 /* if a font is not available for a user, setting fallback fonts is necessary */
 p {
   font-family: 'Ubuntu Mono', monospace;
@@ -79,6 +102,7 @@ button {
   cursor: pointer;
   overflow: hidden;
   font-size: 36px;
+  cursor: pointer;
 }
 
 .center {
@@ -87,6 +111,9 @@ button {
     margin-right: auto;
     width: 50%;
 }
+
+
+
 body{
   background: url("Image/background.png");
   background-repeat: repeat;
@@ -112,7 +139,7 @@ body{
     font-size: 36px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .sidenav span {
@@ -199,11 +226,61 @@ body{
     margin-left: 50px;
 }
 
+/* The bottom navigation menu */
+.bottomnav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    cursor: pointer;
+}
+
+/* The navigation menu links */
+.bottomnav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;
+    transition: 0.3s;
+}
+
+.bottomnav span {
+  font-family: 'Ubuntu Mono', monospace;
+  color: RGB(0, 200, 0);
+  color: RGBa(0, 200, 0, 0.9);
+  /* background-color: AliceBlue; */
+  font-size: 36 px; 
+  text-align: center;
+  cursor: pointer;
+}
+}
+
+/* When you mouse over the navigation links, change their color */
+.bottomnav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.bottomnav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-    .sidenav2 {padding-top: 15px;}
-    .sidenav2 a {font-size: 36px;}
+    .bottomnav {padding-top: 15px;}
+    .bottomnav a {font-size: 36px;}
 }
 
 
@@ -251,6 +328,70 @@ body{
     font-size: 36px;
     margin-left: 50px;
     }
+.link_container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+<style>
+.link_container h3 {
+    padding: 50px;
+    transition: ease all 1s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.link_container h3:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.link_container a{
+    transition: ease all .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;  
+}
+.link_container :hover {
+    transform: scale(1.5s);  
+}
+</style>
+.icon_container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+<style>
+.icon_container a{
+    padding: 50px;
+    transition: ease all .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.icon_container :hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
+
+.projectDescription > a{
+  font-family: 'Ubuntu Mono', monospace;
+  color: RGB(0, 200, 0);
+  color: RGBa(0, 200, 0, 0.9);
+  /* background-color: AliceBlue; */
+  font-size: 24 px; 
+  text-align: center;
+  transition: .8s;
+  cursor: pointer;
+}
+
+.projectDescription > img{
+  
+}
 
 
 /* Go from zero to full opacity */
