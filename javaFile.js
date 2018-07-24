@@ -115,3 +115,9 @@ function changeImage(){
         counter=0;
     }
 }
+
+<script>
+	setTimeout(function(){ 
+		window.location.href="index.html";
+		}, 5000);
+</script>
