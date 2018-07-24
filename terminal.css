@@ -1,407 +1,13 @@
-/*universal font declaration */ 
-* {
-  font-family: 'Ubuntu Mono', monospace;
-  color: RGB(0, 200, 0);
-  color: RGBa(0, 200, 0, 0.9);
-  /* background-color: AliceBlue; */
-  font-size: 36 px; 
-  text-align: center;
-}
-
-.color {
-    background-color: #ccc;
-}
-/* you can change word spacing using word-spacing */
-h1 {
-  font-family: 'Ubuntu Mono', monospace;
-  color: RGB(0, 200, 0);
-  color: RGBa(0, 200, 0, 0.9);
-  /* background-color: AliceBlue; */
-  font-size: 36 px; 
-  text-align: center;
-
-}
-h2 {
-  font-family: 'Ubuntu Mono', monospace;
-  color: RGB(0, 200, 0);
-  color: RGBa(0, 200, 0, 0.9);
-  /* background-color: AliceBlue; */
-  font-size: 36 px; 
-  text-align: center;
-}
-h3 {
-  font-family: 'Ubuntu Mono', monospace;
-  color: RGB(0, 200, 0);
-  color: RGBa(0, 200, 0, 0.9);
-  /* background-color: AliceBlue; */
-  font-size: 36 px; 
-  text-align: center;
-  transition: .8s;
-  cursor: pointer;
-}
-
-h4 {
-  font-family: 'Ubuntu Mono', monospace;
-  color: RGB(0, 200, 0);
-  color: RGBa(0, 200, 0, 0.9);
-  /* background-color: AliceBlue; */
-  font-size: 24 px; 
-  text-align: center;
-}
-<style>
-.center h3 {
-    padding: 50px;
-    transition: 1s; /* Animation */
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    cursor: pointer;
-
-}
-
-.center h3:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-</style>
-/* if a font is not available for a user, setting fallback fonts is necessary */
-p {
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 20px;
-  line-height: 1.5em;
-  font-weight: bold;
-  color: RGB(0, 200, 0);
-  color: RGBa(0, 200, 0, 0.9);
-}
-/* website link color */
-a {
-  font-family: 'Ubuntu Mono', monospace;
-  color: RGB(0, 200, 0);
-  color: RGBa(0, 200, 0, 0.9);
-  /* background-color: AliceBlue; */
-  font-size: 24 px; 
-  text-align: center;
-  cursor: pointer;
-}
-
-img {
-  border-radius: 100%;
-  padding:5px;
-  cursor: pointer;
-}
-svg {
-  border-radius: 50%;
-}
-
-ul {
-  color: Crimson; 
-}
-
-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  font-size: 36px;
-  cursor: pointer;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-
-
-body{
-  background: url("Image/background.png");
-  background-repeat: repeat;
-  background-attachment:fixed;
-}
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    right: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 1s;
-}
-
-.sidenav span {
-  font-family: 'Ubuntu Mono', monospace;
-  color: RGB(0, 200, 0);
-  color: RGBa(0, 200, 0, 0.9);
-  /* background-color: AliceBlue; */
-  font-size: 36 px; 
-  text-align: center;
-}
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 36px;}
-}
-
-/* The side navigation menu */
-.sidenav2 {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav2 a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav2 span {
-  font-family: 'Ubuntu Mono', monospace;
-  color: RGB(0, 200, 0);
-  color: RGBa(0, 200, 0, 0.9);
-  /* background-color: AliceBlue; */
-  font-size: 36 px; 
-  text-align: center;
-}
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav2 a:hover {
-    color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav2 .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* The bottom navigation menu */
-.bottomnav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    cursor: pointer;
-}
-
-/* The navigation menu links */
-.bottomnav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 36px;
-    display: block;
-    transition: 0.3s;
-}
-
-.bottomnav span {
-  font-family: 'Ubuntu Mono', monospace;
-  color: RGB(0, 200, 0);
-  color: RGBa(0, 200, 0, 0.9);
-  /* background-color: AliceBlue; */
-  font-size: 36 px; 
-  text-align: center;
-  cursor: pointer;
-}
-}
-
-/* When you mouse over the navigation links, change their color */
-.bottomnav a:hover {
-    color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.bottomnav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .bottomnav {padding-top: 15px;}
-    .bottomnav a {font-size: 36px;}
-}
-
-
-#feedback {
-        position: fixed;
-        right: 0;
-        bottom: 150px;
-        height: 250px;
-        margin-left: -3px;
-        margin-bottom: -3px;
-        width:0;
-        background-color: #111;
-        transition: 0.5s;
-            }
-
-    #feedback-tab {
-        float: right;
-        color: #fff;
-        font-size: 20px;
-        cursor: pointer;
-        text-align: center;
-        width: 120px;
-        height: 42px;
-        background-color: rgba(0,0,0,0.5);
-        margin-top: 60px;
-        margin-right: -42px;
-        padding-top: 5px;
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-        border-radius: 3px;
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-    }
-
-    #feedback-tab:hover {
-        background-color: rgba(0,0,0,0.4);
-    }
-    #feedback .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    }
-.link_container{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-<style>
-.link_container h3 {
-    padding: 50px;
-    transition: ease all 1s; /* Animation */
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-.link_container h3:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-.link_container a{
-    transition: ease all .2s; /* Animation */
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;  
-}
-.link_container :hover {
-    transform: scale(1.5s);  
-}
-</style>
-.icon_container{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-<style>
-.icon_container a{
-    padding: 50px;
-    transition: ease all .2s; /* Animation */
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-.icon_container :hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-</style>
-
-.projectDescription > a{
-  font-family: 'Ubuntu Mono', monospace;
-  color: RGB(0, 200, 0);
-  color: RGBa(0, 200, 0, 0.9);
-  /* background-color: AliceBlue; */
-  font-size: 24 px; 
-  text-align: center;
-  transition: .8s;
-  cursor: pointer;
-}
-
-
-
-/* Go from zero to full opacity */
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+body { background:#d2dfe6;
+color: #444;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+line-height: 1.5em;
 }
 
 /* FINDER WINDOW */
 
 #window{
-    width: 90%;
+    width: 100%;
     margin-top:40px;
   margin-left: auto;
   margin-right: auto;
@@ -744,17 +350,17 @@ body{
 }
 
 
-#bodyTerm {
+#body {
     font-family: Andale Mono, monospace;  line-height: 1em;
     font-size:13px;
     float: left;
     width: 100%;
-    min-height:130px;
+    min-height:300px;
     background:#000;
     padding:10px;
     line-height:1.5em;
 }
-#bodyTerm p { 
+#body p { 
    color: #63de00!important; 
 }
 
@@ -779,7 +385,7 @@ body{
   height:19px;
   margin-bottom:-3px;
 }
-#bodyTerm:hover .cursor {
+#body:hover .cursor {
     -webkit-animation-name: blink;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-iteration-count: infinite;
@@ -788,13 +394,13 @@ body{
     -moz-animation-iteration-count: infinite;
 }
   
-#bodyTerm p::-webkit-selection  {
+#body p::-webkit-selection  {
     background:#0b209e;
 }
-#bodyTerm p::selection { background:#0b209e; }
-#bodyTerm p::-moz-selection { background:#0b209e; }
+#body p::selection { background:#0b209e; }
+#body p::-moz-selection { background:#0b209e; }
 
-#bodyTerm p {
+#body p {
   margin-top:5px;
   margin-bottom:5px;
   font-size:13px;

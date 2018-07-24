@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="./terminal.css" type="text/css" rel="stylesheet">
+<style>
+ 
+.parallax {
+    /* The image used */
+    background-image: url("Image/Background.png");
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed; 
+    background-repeat: repeat;
+
+
+}
+</style>
+</head>
+<body>
+
+<div style="height:100%;background-color:black;font-size:24px">
+<div id="window">
+  <div id="toolbar">
+    <div class="top">
+      <div id="lights">
+        <div class="light red">
+          <div class="glyph">×</div>
+          <div class="shine"></div>
+          <div class="glow"></div>
+        </div>        
+        <div class="light yellow">
+          <div class="glyph">-</div>
+          <div class="shine"></div>
+          <div class="glow"></div>
+        </div>
+        <div class="light green">
+          <div class="glyph">+</div>
+          <div class="shine"></div>
+          <div class="glow"></div>
+        </div>
+      </div>
+      <div id="title">
+        <div class="folder">
+          <div class="tab"></div>
+          <div class="body"></div>
+        </div>
+        capsulecrm.com
+      </div>
+      <div id="bubble">
+        <div class="shine"></div>
+        <div class="glow"></div>
+      </div>
+    </div>
+  </div>
+  <div id="body">
+    <p> Last login: Thu May 24 12:18:16 on ttys006 <br />
+Doms-MacBook-Pro:flight dom$  </p>  
+    <div class="cursor"></div>  
+  </div>  
+</div>
+</div>
+
+<div class="parallax"></div>
+
+<div style="height:500px;background-color:red;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+<div class="parallax"></div>
+</body>
+</html>
