@@ -1,4 +1,21 @@
 
+var amBig = false
+function getBig(){
+	//$(".box").css({"height": "100vh", "width": "100vw"});
+	if (amBig){
+		return
+	}
+	amBig = true
+	$(".box").toggleClass("mybox");
+	console.log("here")
+	setTimeout(function(){
+		console.log("here2");
+		$(".box").hide();
+		//$(".mybox2").fadeIn(500);
+		$(".box2").toggleClass(".box2");
+	}, 2000)
+}
+
 /* Open the sidenav */
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
@@ -115,3 +132,4 @@ function changeImage(){
         counter=0;
     }
 }
+

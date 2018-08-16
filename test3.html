@@ -3,9 +3,10 @@
   <head>
     <title>Personal Website of Graham Harper</title>
     <link href="./test3.css" type="text/css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
   </head>
   <body>
-    <div class="box" onmousewheel="getBig()">
+    <div class="box" onclick="getBig()">
       <div id="window">
         <div id="toolbar">
           <div class="top">
@@ -40,8 +41,8 @@
           </div>
         </div>
         <div id="bodyTerm">
-          <p>Welcome to Graham Harper Personal Website<br />
-          Scroll Down to enter Enter...</p>  
+          <p>Welcome to Graham Harper's Personal Website<br />
+          Click to enter Enter...</p>  
           <div class="cursor">
           </div>  
         </div>  
@@ -58,48 +59,72 @@
           height="400px" width="2.5px"
           alt="A photo of the Flatirons in Boulder, Colorado"
           class = "center"
-        /></a>
+          style="border-radius:50%"/></a>
         <h1>Graham Harper</h1>
         <h2>Programmer.</h2>
-        <h3 onclick="openBottom()">About Me</h3>
+        <h3> <button onclick="openBottom()">About Me </button></h3>
       </div>
       
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <h3>Resume goes here</h3>
-        <h4>This is a fake resume</h4>
+        <h3>My Resume</h3>
         <embed src="Image/Fakeresume.pdf#zoom=100" type="application/pdf" width="100%" height="100%" />
       </div>
 
       <div id="mySidenav2" class="sidenav2">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
-        <h3>Projects go here</h3>
-        <h4>Click to expand each category</h4>
-        <h2> <button onclick="openWork()">Work Projects </button></h2>
+        <h3 style="color:Black; font-size:48px; font-family: 'Ubuntu Mono', monospace">Projects</h3>
+        <h4 style="color:Black">Click to expand each category</h4>
+        <h2> <button onclick="openWork()" style="color:Black">Work Projects </button></h2>
         <div id="work" style="display: none">
-          <p>Project ares</p>
+          <button onclick="openProjectWork()" style="color:Black">Project ares</button>
+          <div id="workDescription" style="display: none">
+            <p style="color:Black">Worked as software developement intern on team creating state of the art cyber security training platform</p>
+            <a href="https://www.circadence.com/project-ares/training-assessments/" target="_blank" style="color:white; font-size:24px;">Link to project</a>
+          </div>
         </div>
-        <h2> <button onclick="openProjects()">Personal Projects </button> </h2>
+        <h2> <button onclick="openProjects()" style="color:Black">Personal Projects </button> </h2>
         <div id="projects" style="display: none">
-          <button onclick="openProject()">BlackJack</button>
+          <button onclick="openProject()" style="color:Black">BlackJack</button>
             <div id="projectDescription" style="display: none">
-              <p>A simple command line based black jack game complete with betting system. Allows user to save money locally to continue play wheneber they please. Written entireley in python.</p>
-              <a href="https://github.com/grahamsh/BlackJackGame" target="_blank">Link</a>
-              <h4> <button onclick="openPictures()">Pictures</h4>
+              <p style="color:Black">A simple command line based black jack game complete with betting system. Allows user to save money locally to continue play wheneber they please. Written entireley in python.</p>
+              <a href="https://github.com/grahamsh/BlackJackGame" target="_blank" style="color:white; font-size:24px;">Link to game repo</a>
+              <h4> <button onclick="openPictures()" style="color:yellow; font-size:24px;">Pictures</h4>
               <div id="pictures" style="display: none">
-                <img src="Image/BlackJack1.png" onclick="changeImage()"
-                  target="_blank"
-                  height = "50%"
-                  width = "50%"
-                  style="border-radius: 0%"
-                />
+                <div class="slideshow-container">
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides fade">
+                  <div class="numbertext">1 / 2</div>
+                  <img src="Image/BlackJack1.png">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 2</div>
+                  <img src="Image/BlackJack2.png">
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span>  
+              </div>
               </div>
             </div>
           </div>
         </div>
         <div id="myBottomNav" class="bottomnav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeBottom()">&times;</a>
-          <h3>About Me goes here</h3>
+          <h3 style="color:orange;">About Me</h3>
+          <p style="color:orange; text-align:left">Passionate about cyber security, driven by a love of problem solving; I am current completing a Bachelors degree in Computer Science from the University of Colorado, Boulder.</p>
+          <p style="color:orange; text-align:left">I enjoy riding bicycles, sailing, hiking, and playing sqaush in my free time, as well as going to concerts, sporting events and watching movies.</p>
+          <p style="color:orange; text-align:left">I am a member of the ethical hacking club at CU Boulder, and enjoy attending and collaborating at hackathons</p>
+          <p style="color:orange; text-align:left">I hope to help my the world a safer and better place through work in the cyber security field</p>
         </div>
       <div class="center">
         <h3><button onclick="openLinks()">Links</button></h3>
@@ -107,7 +132,7 @@
       <div class="links" id="links" style="display: none">
         <div class = "link_container">  
           <h4>
-            <a onclick="openNav()">Resume,</a><a href="https://github.com/grahamsh" target="_blank">Github,</a> <a href="mailto:Harper.grahams@gmail.com" target="_blank"> Email,</a> <a onclick="openNav2()">Projects</a>
+            <a onclick="openNav()" style="color:#5084d8; transition: .8s;">Resume,</a><a href="https://github.com/grahamsh" target="_blank" style="color:#5084d8; text-decoration:none;">Github,</a> <a href="mailto:Harper.grahams@gmail.com" target="_blank" style="color:#5084d8; text-decoration:none;"> Email,</a> <a onclick="openNav2()" style="color:#5084d8">Projects</a>
           </h4> 
         </div> 
         <!-- Use any element to open the sidenav -->
@@ -128,7 +153,7 @@
               height = "60px"
               width = "60px"
               alt="My Github"
-              style="transition: .8s" 
+              style="transition: .8s; border-radius: 50%;" 
           /></a>
           <a href="mailto:Harper.grahams@gmail.com"
           target="_blank">
@@ -141,10 +166,10 @@
           /></a>
           <span onclick="openNav2()">
             <img 
-              src = "Image/icons8-realtime-96.png"
+              src = "http://icons.iconarchive.com/icons/elegantthemes/beautiful-flat/128/compose-icon.png"
               target="_blank"
-              height = "70px"
-              width = "70px"
+              height = "60px"
+              width = "60px"
               alt = "Projects"
               style="transition: .8s" 
           /></span>
