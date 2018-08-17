@@ -51,15 +51,34 @@
     
     <div class="box2" style="display:none;">
       <div class="center">
-        <!-- <p>An image:</p> -->
-        <a href="https://en.wikipedia.org/wiki/Boulder,_Colorado"
-        target="_blank">
-          <img
-          src="https://i.reddituploads.com/a9689f3ce24c408585101ff0da32ea3d?fit=max&h=1536&w=1536&s=d0b71e039bf1965c6ca1eb3530f2ee54" 
-          height="400px" width="2.5px"
-          alt="A photo of the Flatirons in Boulder, Colorado"
-          class = "center"
-          style="border-radius:50%"/></a>
+        <div class="slideshow-container2">
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides2 fade">
+                  <img src="Image/sailing.jpg" style="width: 500px; height: 500px; transform:rotate(90deg); border-radius: 50%" onclick="plusSlides2(1)">
+                </div>
+
+                <div class="mySlides2 fade2">
+                  <img src="Image/sunset.jpg" style="width: 500px; height: 500px; transform: rotate(90deg); border-radius: 50%;" onclick="plusSlides2(1)">
+                </div>
+                <div class="mySlides2 fade">
+                  <img src="Image/backpacking.jpg" style="width: 500px; height: 500px; transform:rotate(90deg); border-radius: 50%" onclick="plusSlides2(1)">
+                </div>
+
+                <div class="mySlides2 fade2">
+                  <img src="Image/mountain_biking.jpg" style="width: 500px; height: 500px; transform: rotate(0deg); border-radius: 50%;" onclick="plusSlides2(-3)">
+                </div>
+                        
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot2" onclick="currentSlide2(1)"></span> 
+                <span class="dot2" onclick="currentSlide2(2)"></span>  
+                <span class="dot2" onclick="currentSlide2(3)"></span> 
+                <span class="dot2" onclick="currentSlide2(4)"></span>  
+              </div>
+   
         <h1>Graham Harper</h1>
         <h2>Programmer.</h2>
         <h3> <button onclick="openBottom()">About Me </button></h3>
