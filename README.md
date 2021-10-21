@@ -1,2 +1,2 @@
 # grahamsh.github.io
-Special thanks to http://cssdeck.com/labs/pure-css-osx-terminal for providing framework fo rterminal welcome screen
+On going project where I try out new stuff and attempt to build a site to expand my knowledge of html, css, and javascript
