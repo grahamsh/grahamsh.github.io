@@ -1,0 +1,670 @@
+* {
+  font-family: 'Ubuntu Mono', monospace;
+  color: RGB(255,255,255);
+  color: RGBa(255,255,255, 0.9);
+  /* background-color: AliceBlue; */
+  text-align: center;
+
+}
+
+body{
+background-color: black;
+}
+
+.color {
+    background-color: #ccc;
+}
+/* you can change word spacing using word-spacing */
+h1 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 38px; 
+  text-align: center;
+  background-color: transparent;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 2px;
+  color: #7F7F7F;
+
+}
+h2 {
+  font-family: 'Ubuntu Mono', monospace;
+  color: RGB(255,255,255);
+  color: RGBa(255,255,255, 0.9);
+  font-weight: 500;
+  /* background-color: AliceBlue; */
+  font-size: 28px; 
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  color: #7F7F7F;
+
+}
+h3 {
+  font-family: 'Ubuntu Mono', monospace;
+  color: white;
+  /* background-color: AliceBlue; */
+  font-size: 20px; 
+  text-align: center;
+  transition: .8s;
+}
+
+h4 {
+  font-family: 'Ubuntu Mono', monospace;
+  color: RGB(0, 200, 0);
+  color: RGBa(0, 200, 0, 0.9);
+  /* background-color: AliceBlue; */
+  text-align: center;
+}
+
+h5 {
+ font-family: 'Ubuntu Mono', monospace;
+  color: white;
+  /* background-color: AliceBlue; */
+  font-size: 20px; 
+  text-align: center;
+  transition: .8s;}
+
+<style>
+.center h3 {
+    padding: 50px;
+    transition: 1s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+
+.center h3:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
+
+<style>
+
+.column h2:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
+body{
+background-color: black;
+}
+  /* if a font is not available for a user, setting fallback fonts is necessary */
+p {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 16px;
+  color: white;
+  /* background-color: AliceBlue; */
+  text-align: left;
+  transition: .8s;
+}
+/* website link color */
+a {
+  font-family: 'Ubuntu Mono', monospace;
+  color: RGB(255,255,255);
+  color: RGBa(255,255,255, 0.9);
+  font-weight: 500;
+  /* background-color: AliceBlue; */
+  font-size: 28px; 
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  color: #7F7F7F;
+  cursor: pointer;
+}
+
+img {
+  padding:5px;
+  cursor: pointer;
+}
+svg {
+  border-radius: 50%;
+}
+
+ul {
+  color: Crimson; 
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.pject {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.about {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 1s;
+}
+
+.sidenav span {
+  font-family: 'Ubuntu Mono', monospace;
+  color: RGB(0, 200, 0);
+  color: RGBa(0, 200, 0, 0.9);
+  /* background-color: AliceBlue; */
+  font-size: 36 px; 
+  text-align: center;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 36px;}
+}
+
+/* The side navigation menu */
+.sidenav2 {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #7FDBFF; /* Aqua*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav2 span {
+  font-family: 'Ubuntu Mono', monospace;
+  color: RGB(0, 200, 0);
+  color: RGBa(0, 200, 0, 0.9);
+  /* background-color: AliceBlue; */
+  font-size: 36 px; 
+  text-align: center;
+}
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav2 a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* The bottom navigation menu */
+.bottomnav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #FFFFFF; /* White*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    cursor: pointer;
+}
+
+/* The navigation menu links */
+.bottomnav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;
+    transition: 0.3s;
+}
+
+.bottomnav span {
+  font-family: 'Ubuntu Mono', monospace;
+  color: RGB(0, 200, 0);
+  color: RGBa(0, 200, 0, 0.9);
+  /* background-color: AliceBlue; */
+  font-size: 36 px; 
+  text-align: center;
+  cursor: pointer;
+}
+}
+
+/* When you mouse over the navigation links, change their color */
+.bottomnav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.bottomnav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .bottomnav {padding-top: 15px;}
+    .bottomnav a {font-size: 36px;}
+}
+
+
+#feedback {
+        position: fixed;
+        right: 0;
+        bottom: 150px;
+        height: 250px;
+        margin-left: -3px;
+        margin-bottom: -3px;
+        width:0;
+        background-color: #111;
+        transition: 0.5s;
+            }
+
+    #feedback-tab {
+        float: right;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        width: 120px;
+        height: 42px;
+        background-color: rgba(0,0,0,0.5);
+        margin-top: 60px;
+        margin-right: -42px;
+        padding-top: 5px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    #feedback-tab:hover {
+        background-color: rgba(0,0,0,0.4);
+    }
+    #feedback .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    }
+.link_container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+<style>
+.link_container h3 {
+    padding: 50px;
+    transition: ease all 1s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.link_container h3:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.link_container a{
+    transition: ease all .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;  
+}
+.link_container :hover {
+    transform: scale(1.5s);  
+}
+</style>
+.icon_container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+<style>
+.icon_container a{
+    padding: 50px;
+    transition: ease all .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.icon_container :hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.icon_container2 :hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */    
+}
+</style>
+
+.projectDescription > a{
+  font-family: 'Ubuntu Mono', monospace;
+  color: RGB(0, 200, 0);
+  color: RGBa(0, 200, 0, 0.9);
+  /* background-color: AliceBlue; */
+  font-size: 24 px; 
+  text-align: center;
+  transition: .8s;
+  cursor: pointer;
+}
+
+
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@keyframes blink
+{
+  0%   {  background:rgba(99,222,0,100);  }
+  100% {  background:rgba(99,222,0,0);  }
+}
+
+@-webkit-keyframes blink {
+  0%   {  background:rgba(99,222,0,100);  }
+  100% {  background:rgba(99,222,0,0);  }
+}
+@-moz-keyframes blink {
+  0%   {  background:rgba(99,222,0,100);  }
+  100% {  background:rgba(99,222,0,0);  }
+}
+.cursor {
+
+  display:inline-block;
+  width:11px;
+  height:19px;
+  margin-bottom:-3px;
+}
+#bodyTerm:hover .cursor {
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blink;
+    -moz-animation-duration: 1.5s;
+    -moz-animation-iteration-count: infinite;
+}
+  
+#bodyTerm p::-webkit-selection  {
+    background:#0b209e;
+}
+#bodyTerm p::selection { background:#0b209e; }
+#bodyTerm p::-moz-selection { background:#0b209e; }
+
+#bodyTerm p {
+  margin-top:5px;
+  margin-bottom:5px;
+  font-size:13px;
+}
+
+#content{
+    float: left; 
+    margin-top: 1px;
+}
+
+* {box-sizing:border-box}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h5 {
+  text-align: left;
+
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation: 
+    typing 1.5s steps(20, end),
+    blink-caret .5s step-end 8;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0% }
+  to { width: 20% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+.grid-container {
+  display: grid;
+  height: 1500px;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+  background-color: black;
+  padding: 10px;
+  margin-top: 115px;
+  margin-bottom: 1px;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.grid-container div {
+  background-color: rgb(23, 24, 24);
+  text-align: center;
+  padding: 25px 0;
+  font-size: 30px;
+  /*margin-top: 15%;*/
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 50px;
+  width: 90%;
+  position: static;
+  vertical-align: top;
+
+}
+
+/*
+.row2 > .column2 {
+  padding: 0 8px;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column2 {
+  float: left;
+  width: 25%;
+}
+*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(25, 25, 25, 0.5);
+}
+
+
+.modal-content {
+  position: relative;
+  background-color: rgba(25, 25, 25, 0.5);
+  margin: auto;
+  padding: 0;
+  width: 1000px;
+  height: 700px; 
+  max-width: 1200px;
+}
+
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+

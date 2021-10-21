@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Website of Graham Harper</title>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="intro">
+      <div class="center" style="background-color: black; margin-bottom: 100px;">
+        <div class="slideshow-container2" style="margin-top: 70px">
+          <img src="Image/linked.png" style="width: 200px; height: 200px; transform:rotate(0deg); border-radius: 100%; margin-bottom: 2px; cursor: default;">
+        </div>
+   
+        <h1 style="margin-top: 2px;">Graham Harper</h1>
+        <h2>Programmer.</h2>
+      </div>
+    </div>
+
+
+    <div class="about" style="background-color: rgb(23, 24, 24); width: 90%"> 
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3 style="text-align: center;">My Resume</h3>
+        <embed src="Image/Resume.pdf#zoom=100" type="application/pdf" width="100%" height="100%" />
+      </div>
+      <div class="links" id="links" style="margin-top: 3%; margin-bottom: 3%">
+        <!--
+        <div class = "link_container">  
+          <h4>
+            <a onclick="openNav()" style="color:#5084d8; transition: .8s;">Resume, </a><a href="https://github.com/grahamsh" target="_blank" style="color:#5084d8; text-decoration:none;">Github,</a> <a href="mailto:Harper.grahams@gmail.com" target="_blank" style="color:#5084d8; text-decoration:none;"> Email</a>
+          </h4>
+        </div> 
+      -->
+        <!-- Use any element to open the sidenav -->
+        <div class="column"  style="flex: 33%; padding: 5px; margin-left: 200px;">
+          <div class="icon_container">
+            <span onclick="openNav()">
+              <img 
+                src = "Image/icons8-resume-100-black.png"
+                height = "60px"
+                width = "60px"
+                alt = "My Resume"
+                id = "res"
+                style="transition: .8s; position: sticky;" 
+            /></span>
+            <a href="https://github.com/grahamsh"
+            target="_blank">
+              <img 
+                src = "Image/github2.png"
+                height = "60px"
+                width = "60px"
+                alt="My Github"
+                style="transition: .8s; border-radius: 50%;" 
+            /></a>
+            <a href="mailto:Harper.grahams@gmail.com"
+            target="_blank">
+              <img 
+                src = "http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/email-icon.png"
+                height = "60px"
+                width = "60px"
+                alt="Email Me"
+                style="transition: .8s"  
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="column" style="margin-left: 10px; margin-top: 3%; margin-bottom: 3%">
+        <div class="icon_container2">
+        <h2 style="margin-top: 15%; transition: .8s"><a onclick="openNav()" style="transition: .8s; position: sticky;">Resume</a></h2>
+        <h2 style="margin-top: 28%; transition: .8s"><a href="https://github.com/grahamsh" target="_blank" style=" text-decoration:none;">Github</a></h2>
+        <h2 style="margin-top: 27%; transition: 0.8s"> <a href="mailto:Harper.grahams@gmail.com" target="_blank" style="text-decoration:none;"> Contact</a></h2>
+        </div>
+      </div>
+      <div class="column" style="margin-left: 33%; margin-top: 2%; margin-bottom: 2%; margin-right: 7%">
+        <div id="about text">
+          <div class="typewriter">
+            <h5 style="text-align: left; font-size:32px; margin-right: 80%">About me</h5>
+          </div>
+          <p style="text-align: left; font-size: 18px">
+            I am a highly motivated software enginner and technical support specialist who studied Computer Science and Cyber Security at the University of Colorado, Boulder. I am passionate about problem solving, learning, colloborating and exploring exciting new cyber solutions. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="pject" style="background-color: black; width: 90%; height: 3000px; margin-top: 5%">
+      <h1 style="color: white; font-size: 32"> Projects</h1>
+      <p style="margin-left: 20%; margin-right: 20%">Below you will find a collection of projects both work and personal. Most coding was done in python. The personal project's source code can be found on my Github. Unfortunately the projects done for work are owned by the companies and I do not have the ability to share that code. Additionally the source code for this website is available on Github.</p>
+      
+      <div class="grid-container">
+        
+        <div>
+          <h2 style="color:white">Project ares</h2>
+          <div id="workDescription">
+            <p style="color:white; margin-left: 20px; margin-right: 20px">Worked as software developement intern on team creating state of the art cyber security training platform
+            </p>
+            <a href="https://projectares.academy/" target="_blank" style="color:white; font-size:24px;">Link to project</a>
+            <img src="Image/ares2.png" onclick="openModal()" class="hover-shadow cursor" style="width: 100%; height: 80%; margin-top: 10px">
+            </div>
+            
+        </div>
+        
+        <div>
+          <h2 style="color:white;">Password Cracker</h2>
+          <div id="workDescription">
+            <p style="color:white">Created a simple python password cracker that accepts an md5 hash and then either brute forces or accepts a dictionary to crack the password.</p>
+            <a href="https://github.com/grahamsh/PasswordCracker/blob/main/password_cracker.py" target="_blank" style="color:white; font-size:24px;">Link to project</a>
+            <img src="Image/pass1.png" onclick="openModal2()" class="hover-shadow cursor" style="width: 90%; height: 70%; margin-top: 10px">
+          </div>
+        </div>
+
+        <div>
+          <h2 style="color:white;">Python BlackJack Game</h2>
+          <div id="workDescription">
+            <p style="color:white">Wrote a basic BlackJack game in python. Code available on github and linked below.</p>
+            <a href="https://github.com/grahamsh/PasswordCracker/blob/main/password_cracker.py" target="_blank" style="color:white; font-size:24px;">Link to project</a>
+            <img src="Image/BlackJack1.png" onclick="openModal3()" class="hover-shadow cursor" style="width: 60%; height: 50%; margin-top: 10px">
+          </div>
+        </div>
+
+        <div style="height: 8000px">
+          <h2 style="color:white">Coming soon</h2>
+          <div id="workDescription">
+            <p style="color:white">More Info Coming soon</p>
+            <a href="" target="_blank" style="color:white; font-size:24px;">Link to project</a></div>
+        </div>
+
+          <div style="height: 8000px">
+            <h2 style="color:white">Coming soon</h2>
+            <div id="workDescription">
+            <p style="color:white">More Info Coming soon</p>
+            <a href="" target="_blank" style="color:white; font-size:24px;">Link to project</a></div>
+          </div>
+          <div style="height: 8000px">
+            <h2 style="color:white">Coming soon</h2>
+            <div id="workDescription">
+            <p style="color:white">More Info Coming soon</p>
+            <a href="" target="_blank" style="color:white; font-size:24px;">Link to project</a></div>
+          </div>
+
+
+      </div>
+      <!-- The Modal/Lightbox -->
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Image/ares2.png" style="width:100%" onclick="plusSlides(1)">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Image/ares.png" style="width:100%" onclick="plusSlides(1)">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Image/ares3.png" style="width:100%" onclick="plusSlides(-2)">
+                  </div>
+
+                  <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                  <!-- Caption text -->
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                 </div>
+                </div>
+            <!-- The Modal/Lightbox -->
+              <div id="myModal2" class="modal">
+                <span class="close cursor" onclick="closeModal2()">&times;</span>
+                <div class="modal-content">
+
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Image/pass1.png" style="width:100%" onclick="plusSlides(1)">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Image/pass2.png" style="width:100%" onclick="plusSlides(1)">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Image/pass3.png" style="width:100%" onclick="plusSlides(-2)">
+                  </div>
+
+                  <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                  <!-- Caption text -->
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                 </div>
+                </div>
+
+
+                <!-- The Modal/Lightbox -->
+              <div id="myModal3" class="modal">
+                <span class="close cursor" onclick="closeModal3()">&times;</span>
+                <div class="modal-content">
+
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="Image/BlackJack1.png" style="width:100%" onclick="plusSlides(1)">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="Image/BlackJack2.png" style="width:100%" onclick="plusSlides(-1)">
+                  </div>
+
+                  <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                  <!-- Caption text -->
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                 </div>
+                </div>
+    </div>
+
+
+
+
+    
+    <script type="text/javascript" src="./expand.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>
